@@ -9,7 +9,7 @@
   "author": "Andrey Telnov",
   "license": "ISC",
   "dependencies": {
-    "sass": "^1.66.1"
+    "sass": "^1.66.1",
+    "scss": "^0.2.4"
   }
-  
 }
