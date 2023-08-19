@@ -65,6 +65,12 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
   position: relative;
+  width: 100vw;
+  background-image: url(../../img/bg/bats-pic.svg), url(../../img/bg/header-bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  z-index: -1;
 }
 
 .header__pic {
@@ -72,7 +78,9 @@ a {
 }
 @media (min-width: 320px) {
   .header__pic {
+    margin-bottom: 16px;
     width: 288px;
+    height: 163px;
   }
 }
 @media (min-width: 375px) {
@@ -111,7 +119,6 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-image: url(../../img/bg/header-bg.jpg);
   background-size: cover;
   z-index: -1;
   position: relative;
@@ -318,6 +325,8 @@ a {
 }
 
 .heder__info {
+  position: relative;
+  display: inline-block;
   color: #fff;
   text-align: center;
   font-family: Inter;
@@ -325,4 +334,54 @@ a {
   font-style: normal;
   font-weight: 600;
   line-height: 120%;
+  background-size: cover;
+  width: 100vw;
+}
+
+.heder__info::before,
+.heder__info::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+}
+
+.info-title {
+  display: block;
+  margin-top: 16px;
+}
+
+.info-list {
+  display: block;
+  color: #FFF;
+  text-align: center;
+  font-family: Inter;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  opacity: 0.8;
+  padding-bottom: 24px;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+@media screen and (min-width: 320px) {
+  .header__btm {
+    display: block;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%;
+    padding: 14px;
+    background-color: #FC3232;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 16px;
+  }
 }/*# sourceMappingURL=main.css.map */
