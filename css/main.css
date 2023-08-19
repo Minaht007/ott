@@ -70,17 +70,17 @@ a {
 .header__pic {
   aspect-ratio: 1/1;
 }
-@media (max-width: 320px) {
+@media (min-width: 320px) {
   .header__pic {
     width: 288px;
   }
 }
-@media (max-width: 375px) {
+@media (min-width: 375px) {
   .header__pic {
     width: 343px;
   }
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .header__pic {
     width: 522px;
   }
@@ -112,13 +112,16 @@ a {
       -ms-flex-align: center;
           align-items: center;
   background-image: url(../../img/bg/header-bg.jpg);
+  background-size: cover;
   z-index: -1;
+  position: relative;
+  width: 100vw;
 }
 @media screen and (min-width: 320px) {
   .header__nav {
     padding: 16px 16px;
     height: 80px;
-    width: 100%;
+    width: 100vw;
   }
 }
 @media screen and (min-width: 375px) {
@@ -184,12 +187,23 @@ a {
 }
 @media screen and (min-width: 768px) {
   .header__enter {
+    position: absolute;
+    right: 40px;
+    padding: 11px 24 px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header__enter {
+    position: absolute;
+    right: 172px;
     padding: 11px 24 px;
   }
 }
 @media screen and (min-width: 1920px) {
   .header__enter {
     padding: 16px 34px;
+    position: absolute;
+    right: 229px;
   }
 }
 
@@ -214,6 +228,92 @@ a {
     font-weight: 600;
     line-height: 140%;
     opacity: 0.8;
+    position: absolute;
+    right: 160px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .header__reg {
+    position: absolute;
+    right: 292px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .header__reg {
+    position: absolute;
+    right: 388px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .telegram {
+    display: none;
+  }
+}
+@media screen and (min-width: 375px) {
+  .telegram {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .telegram {
+    display: inline-block;
+    position: absolute;
+    right: 312px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .telegram {
+    position: absolute;
+    right: 320px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .telegram {
+    position: absolute;
+    right: 444px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .telegram {
+    position: absolute;
+    right: 565px;
+  }
+}
+
+@media screen and (min-width: 320px) {
+  .fb {
+    display: none;
+  }
+}
+@media screen and (min-width: 375px) {
+  .fb {
+    display: none;
+  }
+}
+@media screen and (min-width: 768px) {
+  .fb {
+    display: inline-block;
+    position: absolute;
+    right: 360px;
+  }
+}
+@media screen and (min-width: 990px) {
+  .fb {
+    position: absolute;
+    right: 368px;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .fb {
+    position: absolute;
+    right: 492px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  .fb {
+    position: absolute;
+    right: 605px;
   }
 }
 

@@ -6,14 +6,14 @@
 
 .header__pic {
     aspect-ratio: 1/1;
-    @media (max-width: 320px) {
+    @media (min-width: 320px) {
         width: 288px;
     }
-    @media (max-width: 375px) {
+    @media (min-width: 375px) {
         width: 343px;
     }
 
-    @media (max-width: 768px) {
+    @media (min-width: 768px) {
         width: 522px;
     }
     @media screen and (min-width: 990px) {
@@ -32,48 +32,49 @@
     justify-content: space-between;
     align-items: center;
     background-image: url(../../img/bg/header-bg.jpg);
+    background-size: cover;
     z-index: -1;
-    
+    position: relative;
+    width: 100vw;
     
 
     @media screen and (min-width: 320px) {
-        padding: 16px 16px;
-        // background-image: url(../../img/bg/header-bg.jpg);
+        padding: 16px 16px;      
         height: 80px;
-        width: 100%;
+        width: 100vw;
     }
 
     @media screen and (min-width: 375px) {
         margin: 44px 16px 8px 16px;
-        // background-image: url(../../img/bg/header-bg.jpg);
+        
         height: 108px;
         width: 100%;
     }
 
     @media screen and (min-width: 768px) {
         margin: 23px 40px;
-        // background-image: url(../../img/bg/header-bg.jpg);
+       
         height: 110px;
         width: 100%;
     }
     @media screen and (min-width: 990px) {
         margin-left: 23px;
         margin-right: 23px;
-        // background-image: url(../../img/bg/header-bg.jpg);
+        
         height: 118px;
         width: 100%;
     }
     @media screen and (min-width: 1440px) {
         margin-left: 23px;
         margin-right: 23px;
-        // background-image: url(../../img/bg/header-bg.jpg);
+   
         height: 118px;
         width: 100%;
     }
     @media screen and (min-width: 1920px) {
         margin-left: 220px;
         margin-right: 220px;
-        // background-image: url(../../img/bg/header-bg.jpg);
+        
         height: 156px;
         width: 100%;
     }
@@ -98,10 +99,20 @@
         padding: 9px 24px;
     }
     @media screen and (min-width: 768px) {
+        position: absolute;
+        right: 40px;
+        padding: 11px 24 px;
+    }
+
+    @media screen and (min-width: 1440px){
+         position: absolute;
+        right: 172px;
         padding: 11px 24 px;
     }
     @media screen and (min-width: 1920px) {
         padding: 16px 34px;
+         position: absolute;
+        right: 229px;
     }
 }
 
@@ -115,7 +126,7 @@
     }
 
     @media screen and (min-width: 768px) {
-        display: inline-block;
+    display: inline-block;   
     color: #fff;
     text-align: right;
     font-family: Inter;
@@ -124,12 +135,78 @@
     font-weight: 600;
     line-height: 140%;
     opacity: 0.8;
+    position: absolute;
+    right: 160px;
+    }
+
+    @media screen and (min-width: 1440px) {
+         position: absolute;
+    right: 292px;
+    }
+    @media screen and (min-width: 1920px) {
+        position: absolute;
+        right: 388px;
+    }
+}
+
+.telegram {    
+    @media screen and (min-width: 320px) {
+        display: none;
+    }
+    @media screen and (min-width: 375px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) {  
+        display: inline-block;
+        position: absolute;
+        right: 312px;
+    }
+    @media screen and (min-width: 990px) {
+        position: absolute;
+        right: 320px;
+    }
+
+    @media screen and (min-width: 1440px) {
+         position: absolute;
+            right: 444px;
+    }
+    @media screen and (min-width: 1920px) {
+        position: absolute;
+        right: 565px;
+    }
+}
+
+.fb {   
+    @media screen and (min-width: 320px) {
+        display: none;
+    }
+    @media screen and (min-width: 375px) {
+        display: none;
+    }
+
+    @media screen and (min-width: 768px) { 
+        display: inline-block; 
+        position: absolute;
+        right: 360px;
+    }
+    @media screen and (min-width: 990px) {
+        position: absolute;
+        right: 368px;
+    }
+
+    @media screen and (min-width: 1440px) {
+         position: absolute;
+            right: 492px;
+    }
+    @media screen and (min-width: 1920px) {
+        position: absolute;
+        right: 605px;
     }
 }
 
 .heder__info {
-    
-    color: #fff;
+        color: #fff;
     text-align: center;
     font-family: Inter;
     font-size: 24px;
