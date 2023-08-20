@@ -470,8 +470,9 @@ a {
       -ms-flex-align: start;
           align-items: flex-start;
   gap: 32px;
-  margin-right: 40px;
-  margin-left: 40px;
+  padding-right: 40px;
+  padding-left: 40px;
+  width: 100vw;
 }
 .advantages__item {
   display: -webkit-box;
@@ -493,7 +494,7 @@ a {
   .advantages__title {
     display: block;
     color: rgba(255, 255, 255, 0.9);
-    text-align: center;
+    text-align: start;
     font-family: Inter;
     font-size: 16px;
     font-style: normal;
@@ -501,52 +502,59 @@ a {
     line-height: 24px;
     text-align: center;
     padding-top: 12px;
-    padding-bottom: 41px;
+    width: 205px;
   }
 }
 @media screen and (min-width: 990px) and (max-width: 1439px) {
   .advantages__title {
-    line-height: 18px;
+    display: block;
+    color: rgba(255, 255, 255, 0.9);
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 24px;
     text-align: start;
+    padding-top: 24px;
+    padding-bottom: 16px;
+    width: 220px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 1920px) {
   .advantages__title {
+    display: block;
     color: rgba(255, 255, 255, 0.9);
     font-family: Inter;
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
     line-height: 18px; /* 100% */
+    padding-top: 24px;
   }
 }
 @media screen and (min-width: 1920px) {
   .advantages__title {
+    display: block;
     color: rgba(255, 255, 255, 0.9);
     font-family: Inter;
     font-size: 24px;
     font-style: normal;
     font-weight: 600;
-    line-height: 24px; /* 100% */
+    line-height: 24px;
+    padding-top: 32px;
   }
 }
-@media screen and (min-width: 320px) {
-  .advantages__title__description {
+.advantages__description {
+  display: block;
+  color: #fff;
+}
+@media screen and (min-width: 320px) and (max-width: 989px) {
+  .advantages__description {
     display: none;
   }
 }
 @media screen and (min-width: 990px) and (max-width: 1439px) {
-  .advantages__title__description {
-    color: #fff;
-    font-family: Inter;
-    font-size: 16px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-  }
-}
-@media screen and (min-width: 990px) and (max-width: 1439px) {
-  .advantages__title__description {
+  .advantages__description {
     color: #fff;
     font-family: Inter;
     font-size: 16px;
@@ -556,7 +564,7 @@ a {
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
-  .advantages__title__description {
+  .advantages__description {
     color: #fff;
     font-family: Inter;
     font-size: 16px;
@@ -566,7 +574,7 @@ a {
   }
 }
 @media screen and (min-width: 1920px) {
-  .advantages__title__description {
+  .advantages__description {
     color: #fff;
     font-family: Inter;
     font-size: 20px;
@@ -591,12 +599,9 @@ a {
 }
 @media screen and (min-width: 990px) and (max-width: 1439px) {
   .advantages__icon {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    display: block;
     width: 64px;
     height: 64px;
-    padding-bottom: 156px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
