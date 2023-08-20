@@ -22,6 +22,11 @@ a {
   text-decoration: none;
 }
 
+.img {
+  display: block;
+  width: 100%;
+}
+
 .container {
   width: 100vw;
   margin: 0;
@@ -78,7 +83,6 @@ a {
   background-position: center;
   z-index: -1;
   width: 100vw;
-  height: 100vh;
 }
 
 .header__pic {
@@ -91,7 +95,7 @@ a {
     max-width: 1000px;
   }
 }
-@media (min-width: 375px) {
+@media (min-width: 375px) and (max-width: 767px) {
   .header__pic {
     width: 339px;
     height: auto;
@@ -167,14 +171,14 @@ a {
   .header__nav {
     padding: 44px 16px 8px 16px;
     height: 108px;
-    width: 100%;
+    width: 100vw;
   }
 }
 @media screen and (min-width: 768px) {
   .header__nav {
     padding: 23px 40px;
     height: 110px;
-    width: 100%;
+    width: 100vw;
   }
 }
 @media screen and (min-width: 990px) {
@@ -182,7 +186,7 @@ a {
     margin-left: 23px;
     margin-right: 23px;
     height: 118px;
-    width: 100%;
+    width: 100vw;
   }
 }
 @media screen and (min-width: 1440px) {
@@ -190,7 +194,7 @@ a {
     margin-left: 23px;
     margin-right: 23px;
     height: 118px;
-    width: 100%;
+    width: 100vw;
   }
 }
 @media screen and (min-width: 1920px) {
@@ -198,7 +202,7 @@ a {
     margin-left: 220px;
     margin-right: 220px;
     height: 156px;
-    width: 100%;
+    width: 100vw;
   }
 }
 
@@ -488,7 +492,7 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 342px;
+  width: 100vw;
 }
 @media screen and (min-width: 768px) and (max-width: 989px) {
   .advantages__title {
@@ -507,7 +511,6 @@ a {
 }
 @media screen and (min-width: 990px) and (max-width: 1439px) {
   .advantages__title {
-    display: block;
     color: rgba(255, 255, 255, 0.9);
     font-family: Inter;
     font-size: 16px;
@@ -528,7 +531,7 @@ a {
     font-size: 18px;
     font-style: normal;
     font-weight: 600;
-    line-height: 18px; /* 100% */
+    line-height: 18px;
     padding-top: 24px;
   }
 }
@@ -561,6 +564,7 @@ a {
     font-style: normal;
     font-weight: 400;
     line-height: 150%;
+    padding-bottom: 32px;
   }
 }
 @media screen and (min-width: 1440px) and (max-width: 1919px) {
@@ -599,7 +603,10 @@ a {
 }
 @media screen and (min-width: 990px) and (max-width: 1439px) {
   .advantages__icon {
-    display: block;
+    display: inline-block;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
     width: 64px;
     height: 64px;
   }
