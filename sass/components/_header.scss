@@ -225,7 +225,7 @@
 }
 
 .heder__info {
-    
+    display: block;
   position: relative;
   display: inline-block;
   color: #fff;
@@ -267,6 +267,8 @@
   @media screen and (min-width: 768px) {
     display: flex;
     margin-top: 16px;
+    width: 430px;
+    
   }
 }
 .info-list {
