@@ -27,12 +27,13 @@
   @media (min-width: 768px) {
     display: inline-flex;
     width: 522px;
-    height: auto;
-    margin-left: 50%;   
-    transform: translateX(25%);  
-    position: absolute;
-    top: 0;
-   
+    height: 316px;
+    margin-left: 50%;
+    transform: translateX(25%);
+    position: fixed;
+    top: 88px;
+    left: 0;
+    overflow: hidden;
   }
   @media screen and (min-width: 990px) {
     width: 640px;
@@ -132,7 +133,6 @@
     padding: 16px 34px;
     position: absolute;
     right: 229px;
-    
   }
 }
 
@@ -225,7 +225,7 @@
 }
 
 .heder__info {
-    display: block;
+  display: block;
   position: relative;
   display: inline-block;
   color: #fff;
@@ -255,35 +255,57 @@
 //   background-size: cover;
 // }
 
-
-
-.info-title {  
+.info-title {
   @media screen and (min-width: 320px) and (max-width: 767px) {
     display: block;
     margin-top: 16px;
   }
-  
 
   @media screen and (min-width: 768px) {
     display: flex;
-    margin-top: 16px;
+    // margin-top: 16px;
     width: 430px;
-    
+    color: #fff;
+    font-family: Inter;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%;
+    text-align: start;
+    position: absolute;
+    top: 48px;
+    left: 40px;
   }
 }
 .info-list {
-  display: block;
-  color: #fff;
-  text-align: center;
-  font-family: Inter;
-  font-size: 15px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 140%;
-  opacity: 0.8;
-  padding-bottom: 24px;
-  padding-left: 16px;
-  padding-right: 16px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    display: block;
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    opacity: 0.8;
+    padding-bottom: 24px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    display: inline-block;
+    width: 430px;
+    color: #fff;
+    font-family: Inter;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    text-align: start;
+    position: absolute;
+    left: 40px;
+    top: 148px;
+  }
 }
 
 .header__btm {
@@ -300,5 +322,12 @@
     margin-right: auto;
     margin-left: auto;
     margin-bottom: 16px;
+  }
+  @media screen and (min-width: 768px) {
+    position: absolute;
+    top: 246px;
+    left: 40px;
+    // margin-left: 30px;
+    // margin-bottom: 16px;
   }
 }
