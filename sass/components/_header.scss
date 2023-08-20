@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
-  width: 100vw;
+  
   background-image: url(../../img/bg/bats-pic.svg),
     url(../../img/bg/header-bg.jpg);
   background-size: cover;
@@ -10,6 +10,7 @@
   background-position: center;
   z-index: -1;
   width: 100vw;
+  height: 100vh;
 }
 
 .header__pic {
@@ -24,7 +25,7 @@
     height: auto;
   }
 
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-width: 989px) {
     display: inline-flex;
     width: 522px;
     height: 316px;
@@ -37,15 +38,24 @@
   }
   @media screen and (min-width: 990px) {
     width: 640px;
-    height: auto;
+    height: 359px;    
+    position: fixed;
+    top: 88px;    
+    overflow: hidden;
+    margin: 0;
   }
   @media screen and (min-width: 1440px) {
     width: 740px;
-    height: auto;
+    height: 434px;  
+    position: fixed;
+    top: 88px;   
   }
   @media screen and (min-width: 1920px) {
     width: 1000px;
-    height: auto;
+    height: 561px;
+    position: fixed;
+    top: 88px;
+    right: 0;
   }
 }
 
@@ -53,7 +63,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // background-image: url(../../img/bg/header-bg.jpg);
+ 
   background-size: cover;
   z-index: -1;
   position: relative;
@@ -262,8 +272,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    display: flex;
-    // margin-top: 16px;
+    display: flex;   
     width: 430px;
     color: #fff;
     font-family: Inter;
@@ -327,7 +336,5 @@
     position: absolute;
     top: 246px;
     left: 40px;
-    // margin-left: 30px;
-    // margin-bottom: 16px;
   }
 }
